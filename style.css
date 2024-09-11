@@ -83,3 +83,86 @@ nav ul li a::after{
     .header-text h1 #ama{
         color:yellow;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+#about {
+
+    padding: 80px;
+    color: #ffffff;
+    
+}
+
+.row-about{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.ab-column-img{
+    flex-basis: 35%;
+}
+
+.ab-column-img img{
+    width:100%;
+}
+
+.ab-column-txt{
+   
+    flex-basis: 65%;
+    
+}
+
+.titulos-menu{
+    display:flex;
+    margin: 20px 0 50px;
+}
+
+.menu-links {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight:500;
+    cursor:pointer;
+    position: relative;
+}
+
+.menu-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+}
+
+.menu-links:hover{
+    font-size:22px;
+}
+
+.menu-links.activeL::after{
+    width:70%;
+
+}
+
+.contenido-menu ul li {
+    list-style: none;
+    margin: 10px 0;
+    color: lightcoral;
+}
+
+.contenido-menu ul li span{
+    color:white;
+    font-size: 12px;
+
+}
