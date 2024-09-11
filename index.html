@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Agustin Coronel</title>
     <link href="style.css" rel="stylesheet" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -25,8 +28,8 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Estudiante Lic. En Sistemas</p>
-                <h1>
+                <p id="tit">Estudiante Lic. En Sistemas</p>
+                <h1 id="hea">
                     Hola Soy <span id="nombre">Agustin</span><br />
                     de <span class="cel">Ar</span><span class="bla">ge</span><span id="ama">n</span><span id="bla">ti</span><span class="cel">na</span><br />
 
@@ -44,7 +47,7 @@
                     <img id="imgAbout" src="img/about.png" alt="ME" />
                 </div>
                 <div class="ab-column-txt">
-                    <h1>
+                    <h1 style="color:red">
                         Me presento
                     </h1>
                     <p>
@@ -56,20 +59,36 @@
                         con un enfoque en planificación, gestión y control de proyectos informáticos.
                     </p>
                     <div class="titulos-menu">
-                        <p class="menu-links activeL">Habilidades</p>
-                        <p class="menu-links">Experiencia</p>
-                        <p class="menu-links">Educacion</p>
+                        <p class="menu-links activeL" onclick="opentab('hab')">Habilidades</p>
+                        <p class="menu-links" onclick="opentab('exp')">Experiencia</p>
+                        <p class="menu-links" onclick="opentab('edu')">Educacion</p>
                     </div>
-                    <div class="contenido-menu">
+                    <div class="contenido-menu activeC" id="hab">
                         <ul>
                             <li>Lenguajes<br /><span>C - C++ - C# - JAVA - ADA - PASCAL</span></li>
-                            <li>Frameworks<br /><span></span></li>
-                            <li>Bases de datos<br /><span></span></li>
+                            <li>Frameworks<br /><span>.NET</span></li>
+                            <li>Bases de datos<br /><span>Diseño e implemenacion de BD relacionales en postgresql y entity framework</span></li>
                         </ul>
                     </div>
+                    <div class="contenido-menu" id="exp">
+                        <ul>
+                            <li>2018 - Presente<br /><span>Mantenimiento y reparacion de PC</span></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="contenido-menu" id="edu">
+                        <ul>
+                            <li>Universidad San Juan Bosco<br /><span>Analista Programador Universitario - 2019 - presente</span></li>
+                            <li>Universidad San Juan Bosco<br /><span> Licenciatura en Sistemas - 2019 - presente</span></li>
+                            <li>
+                                Centro Nacional de Educación a Distancia
+                                <br /><span>Curso Instalacion Mantenimiento y reparacion de pc y redes - 2017</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-
         </div>
     </div>
 

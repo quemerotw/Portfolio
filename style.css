@@ -1,8 +1,9 @@
-*{
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+* {
+    font-family: "Sawarabi Mincho", serif;
     margin: 0;
     padding: 0;
 }
+
 
 body{
     background: #000000;
@@ -125,6 +126,7 @@ nav ul li a::after{
 .titulos-menu{
     display:flex;
     margin: 20px 0 50px;
+    color:#ff6767
 }
 
 .menu-links {
@@ -165,4 +167,12 @@ nav ul li a::after{
     color:white;
     font-size: 12px;
 
+}
+
+.contenido-menu{
+    display: none;
+}
+
+.contenido-menu.activeC{
+    display: block;
 }
