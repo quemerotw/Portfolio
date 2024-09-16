@@ -10,6 +10,8 @@ body{
     color: #ffffff;
 }
 
+/*header*/
+
 #header{
     width: 100%;
     height: 100vh;
@@ -21,6 +23,10 @@ body{
 
 .container{
     padding: 10px 10%;
+}
+
+.sub-title{
+    color:red;
 }
 
 nav{
@@ -91,7 +97,7 @@ nav ul li a::after{
 
 
 
-
+/*about*/
 
 
 
@@ -176,3 +182,27 @@ nav ul li a::after{
 .contenido-menu.activeC{
     display: block;
 }
+
+/*Proyectos Universidad*/
+
+#proyectosUni {
+    padding: 30px 0;
+}
+
+.proyUni-list {
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+.imgProy {
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+

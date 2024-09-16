@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "app.js",
-              "DocumentMoniker": "C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\app.js",
-              "RelativeDocumentMoniker": "app.js",
-              "ToolTip": "C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\app.js",
-              "RelativeToolTip": "app.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-11T17:24:11.978Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -49,7 +32,7 @@
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAowHoAAAAEAAAA",
+              "ViewState": "AQIAALwAAAAAAAAAAAAhwM0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-11T13:12:29.927Z",
               "EditorCaption": ""
@@ -62,7 +45,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADEAAAAoAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAGgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-10T13:45:01.564Z",
               "EditorCaption": ""
