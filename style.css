@@ -202,7 +202,40 @@ nav ul li a::after{
     border-radius: 12px;
     width: 100%;
     cursor: pointer;
+    transition: 2s;
 }
 
+.imgProy:hover{
+    transform: scale(1.2)
+    translateY(20px);
+}
+
+.pu-column{
+    color: #ff6767;
+    background-color: #222222;
+    padding:12px;
+    border-radius:20px;
+    transition:1s;
+}
+
+.pu-column:hover {
+    background-color: #4800ff;
+    transform:translateY(-10px);
+    color:black;
+}
+
+.clickMe {
+    transition:1s;
+    border-radius: 20px;
+    align-content: center;
+    color:black;
+    font-size:30px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4),#4800ff);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
 
