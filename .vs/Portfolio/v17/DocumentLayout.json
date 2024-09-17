@@ -21,10 +21,6 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "style.css",
@@ -32,10 +28,14 @@
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AQIAANQAAAAAAAAAAAAuwOYAAAAQAAAA",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAkwPAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-11T13:12:29.927Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\Queme\\OneDrive\\Escritorio\\Git\\Portfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAwwG8AAACWAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAAG4AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-10T13:45:01.564Z",
               "EditorCaption": ""

@@ -1,3 +1,4 @@
+
 * {
     font-family: "Sawarabi Mincho", serif;
     margin: 0;
@@ -193,22 +194,12 @@ nav ul li a::after{
     text-align:center;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows:250px;
     grid-gap: 40px;
     margin-top: 50px;
 }
 
 
-.imgProy {
-    border-radius: 12px;
-    width: 100%;
-    cursor: pointer;
-    transition: 2s;
-}
-
-.imgProy:hover{
-    transform: scale(1.2)
-    translateY(20px);
-}
 
 .pu-column{
     color: #ff6767;
@@ -224,18 +215,26 @@ nav ul li a::after{
     color:black;
 }
 
-.clickMe {
-    transition:1s;
-    border-radius: 20px;
-    align-content: center;
-    color:black;
-    font-size:30px;
+
+#insDepo {
+    text-align:center;
+    align-content:center;
+    border-color: #4800ff;
+    color: rgba(0,0,0,0);
+    border-radius: 10px;
+    content: '';
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.4),#4800ff);
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    height: 50%;
+    background-image: url(img/deportes.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
 }
 
-
+#insDepo:hover{
+    background-blend-mode:color-burn;
+    font-size:50px;
+    color:rgba(67, 55, 255,180);
+    transform:scale(1.2);
+    height:100%;
+}
