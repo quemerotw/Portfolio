@@ -202,39 +202,55 @@ nav ul li a::after{
 
 
 .pu-column{
+    position:relative;
     color: #ff6767;
     background-color: #222222;
     padding:12px;
     border-radius:20px;
     transition:1s;
+    overflow:hidden;
 }
 
 .pu-column:hover {
     background-color: #4800ff;
     transform:translateY(-10px);
     color:black;
+    transform:scale(1.2);
 }
 
-
-#insDepo {
-    text-align:center;
-    align-content:center;
-    border-color: #4800ff;
-    color: rgba(0,0,0,0);
+.imgProy {
     border-radius: 10px;
-    content: '';
+    width: 100%;
+    height: 100%;
+    transition:3s ease-in;
+    display:block;
+}
+
+.pu-column:hover .imgProy {
+    transform: scale(1.9);
+    height: 100%;
+}
+
+.pu-column:hover .layer {
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    backdrop-filter: blur(1px);
+    transition: backdrop-filter 2s, width 2s, height 2s, background 2s;
+    border-radius: 20px;
     width: 100%;
     height: 50%;
-    background-image: url(img/deportes.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: 1s;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    top: 0;
+    left: 0;
 }
 
-#insDepo:hover{
-    background-blend-mode:color-burn;
-    font-size:50px;
-    color:rgba(67, 55, 255,180);
-    transform:scale(1.2);
-    height:100%;
+.layer h2{
+    text-shadow:2px 2px 2px black;
 }
