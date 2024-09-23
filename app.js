@@ -13,4 +13,3 @@ function opentab(nombreMenu) {
     event.currentTarget.classList.add("activeL");
     document.getElementById(nombreMenu).classList.add("activeC");
 }
-

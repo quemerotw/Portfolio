@@ -205,10 +205,12 @@ nav ul li a::after{
     position:relative;
     color: #ff6767;
     background-color: #222222;
-    padding:12px;
     border-radius:20px;
     transition:1s;
     overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pu-column:hover {
@@ -223,7 +225,6 @@ nav ul li a::after{
     width: 100%;
     height: 100%;
     transition:3s ease-in;
-    display:block;
 }
 
 .pu-column:hover .imgProy {
@@ -232,25 +233,77 @@ nav ul li a::after{
 }
 
 .pu-column:hover .layer {
-    display: block;
-    
+    bottom: 0;
     width: 100%;
     height: 100%;
 }
 
 .layer {
-    backdrop-filter: blur(1px);
-    transition: backdrop-filter 2s, width 2s, height 2s, background 2s;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    transition: backdrop-filter 2s, bottom 2s ,width 2s, height 2s, background 2s;
     border-radius: 20px;
-    width: 100%;
-    height: 50%;
     position: absolute;
-    text-align: center;
-    align-content: center;
-    top: 0;
-    left: 0;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    width: 80%;
+    bottom: -90px;
 }
 
 .layer h2{
     text-shadow:2px 2px 2px black;
+}
+
+
+/*-----------------contac---------------*/
+
+.con-rowleft{
+    flex-basis: 35%;
+}
+
+.con-rowleft p{
+    margin-top: 20px;
+}
+
+.con-rowrigth{
+    flex-basis: 60%;
+}
+
+.redes{
+    margin-top: 30px;
+}
+
+.con-rowrigth form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #60ffeb;
+    color: #000000;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+
+
+/*------------VERTICAL-----------*/
+
+
+@media only screen and (max-width: 600px){
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background-color: #000000;
+        color: #000000;
+        padding: 10px;
+        margin: 15px 0;
+        border-radius: 6px;
+    }
 }
