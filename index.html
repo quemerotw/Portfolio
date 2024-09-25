@@ -11,27 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="loaded()">
 
     <!--------------header-------------->
 
     <div id="header">
+        <nav>
+            <img src="img/logo.png" alt="logo" class="logo" />
+            <button type="button" id="boton-style">theme</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="https://github.com/quemerotw" target="_blank">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <nav>
-                <img src="img/logo.png" alt="logo" class="logo" />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">Sobre mi</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="https://github.com/quemerotw" target="_blank">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
             <div class="header-text">
                 <p id="tit">Estudiante Lic. En Sistemas</p>
                 <h1 id="hea">
                     Hola Soy <span id="nombre">Agustin</span><br />
-                    de <span class="cel">Ar</span><span class="bla">ge</span><span id="ama">n</span><span id="bla">ti</span><span class="cel">na</span><br />
+                    de <span class="argentina">Argentina</span><br />
 
                 </h1>
             </div>
@@ -155,7 +156,9 @@
             </div>
         </div>
     </div>
-
+<footer>
+    made with love
+</footer>
     <script src="app.js"></script>
     <noscript></noscript>
 </body>
