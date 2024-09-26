@@ -21,6 +21,9 @@
     --shadow-color:gray;
     --row-about-background:white;
     --ab-column-text:black;
+    --nav-icon:black;
+    --button-background:white;
+    --button-text:black;
 } 
 
 
@@ -30,6 +33,22 @@
     padding: 0;
 }
 
+button{
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border-style:solid;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: var(--button-text);
+    color: var(--button-background);
+    border-style: none;
+    padding: 10px;
+    border-radius: 20px;
+}
 
 body{
     background: var(--background-color);
@@ -311,6 +330,15 @@ footer{
     margin-top: 30px;
 }
 
+.redes a .fa-brands{
+    font-size: 30px;
+    color:grey;
+    transition: 1s;
+}
+.redes a .fa-brands:hover{
+    font-size: 30px;
+    color:white;
+}
 .con-rowrigth form{
     width: 100%;
 }
@@ -329,7 +357,49 @@ form input, form textarea{
 
 /*------------VERTICAL-----------*/
 
+nav .fa-solid{
+    display: none;
+}
 
 @media only screen and (max-width: 600px){
+    .header-text{
+        margin-top:100%;
+    }
+        
+    .header-text h1{
+        margin-top:10px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: var(--nav-icon);
+        cursor:pointer;
+    }
+
+    nav li ul.fa-solid{
+        color: var(--nav-icon);
+    }
     
+    nav ul{
+        background: var(--nav-background);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 40%;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.2s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 10px;
+
+    }
 }

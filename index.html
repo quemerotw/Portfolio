@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/80df01cda2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
 </head>
@@ -19,13 +20,15 @@
         <nav>
             <img src="img/logo.png" alt="logo" class="logo" />
             <button type="button" id="boton-style">theme</button>
-            <ul>
+            <ul id="side-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">Sobre mi</a></li>
                 <li><a href="#">Habilidades</a></li>
                 <li><a href="https://github.com/quemerotw" target="_blank">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars"onclick="openMenu()"></i>
         </nav>
         <div class="container">
             <div class="header-text">
@@ -138,10 +141,9 @@
                     <p>quemerotw4400@gmail.com</p>
                     <p>+542804220856</p>
                     <div class="redes">
-                        <a href="">face</a>
-                        <a href="">tw</a>
-                        <a href="">link</a>
-                        <a href="">inst</a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <a href="img/logo.png" download>descargar cv</a>
                 </div>
