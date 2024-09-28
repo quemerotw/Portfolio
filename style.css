@@ -33,6 +33,33 @@
     padding: 0;
 }
 
+@keyframes rotate {
+
+    0% {
+  
+      transform: rotate(45deg);
+  
+    }
+    
+
+
+    100% {
+  
+      transform: rotate(400deg);
+  
+    }
+  
+  }
+  
+  
+  .box {
+  
+    animation: rotate 5s ease-in-out forwards;
+
+  }
+
+
+
 button{
     background-color: var(--button-background);
     color: var(--button-text);
@@ -88,7 +115,7 @@ nav{
 }
 
 .logo{
-    width: 300px
+    max-width: 300px
 }
 
 nav ul li{
@@ -180,6 +207,7 @@ nav ul li a::after{
 .ab-column-txt{
    color: var(--ab-column-text);
     flex-basis: 65%;
+    width: fit-content;
     
 }
 
@@ -362,6 +390,9 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
+
+
+
     .header-text{
         margin-top:100%;
     }
@@ -402,4 +433,41 @@ nav .fa-solid{
         left: 10px;
 
     }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .ab-column-img ,.ab-column-txt{
+        flex-basis: 100%;
+    }
+
+    .ab-column-img{
+        margin-bottom: 10px;
+    }
+    .ab-column-txt{
+        font-size: 14px;
+        text-align:justify ;
+        width: 100%;
+
+    }
+
+    .titulos-menu{
+        flex-direction: column; 
+    }
+
+    .menu-links{
+        padding-top: 10px;
+    }
+
+
+    form input, form textarea{
+        padding-left: 10px;
+        padding-right:0px ;
+    }
+
 }
