@@ -39,18 +39,24 @@ function loaded(){
     box.style.zIndex = '1000';
     box.style.background = 'white';
     box.style.position = 'fixed';
-    box.style.mixBlendMode = 'difference'; // Set mix-blend-mode to multiply
+    box.style.mixBlendMode = 'difference';
     box.style.top = '-1500px';
     box.style.left = '60%';
     box.style.transformOrigin = 'left';
     box.style.boxShadow = '10px 10px 50px 50px';
     document.body.appendChild(box);
-    box.style.transform = 'translateX(-50%) rotate(360deg)'; // Rotate the box 360 degrees
+    box.style.animation = 'rotate 5s ease forwards';
+    
     setTimeout(function(){
-
-        document.body.removeChild(box);
-
+        box.style.rotate = '150deg';
+        box.style.animation = 'tra 2s ease-out forwards';
+        
     }, 5500);
+    
+    setTimeout(function(){
+        document.body.removeChild(box);
+    }, 7500);
+    
 
     console.log("ex");
 

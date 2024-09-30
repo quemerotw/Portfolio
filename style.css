@@ -36,27 +36,21 @@
 @keyframes rotate {
 
     0% {
-  
-      transform: rotate(45deg);
-  
+        transform: rotate(45deg);      
+    }
+    100%{
+        transform: rotate(150deg);
     }
     
-
-
-    100% {
-  
-      transform: rotate(400deg);
-  
+}
+@keyframes tra {
+    0%{
+        transform: translateX(0px);
     }
-  
-  }
-  
-  
-  .box {
-  
-    animation: rotate 5s ease-in-out forwards;
-
-  }
+    100%{
+        transform: translateX(1000px);
+    }
+}
 
 
 
