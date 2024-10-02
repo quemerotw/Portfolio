@@ -36,7 +36,10 @@
 @keyframes rotate {
 
     0% {
-        transform: rotate(45deg);      
+        transform: rotate(35deg);      
+    }
+    30%{
+        transform: rotate(75deg); 
     }
     100%{
         transform: rotate(150deg);
@@ -51,7 +54,6 @@
         transform: translateX(1000px);
     }
 }
-
 
 
 button{
@@ -81,10 +83,12 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(img/background.png);
+    background-image: url(/img/back.png);
+    background-repeat: no-repeat;
     background-position: right;
-    background-size: 50%;
-    background-repeat:no-repeat;
+    background-clip: content-box;
+    background-position-y: bottom;
+    background-size: 400px;
 }
 
 

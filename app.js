@@ -33,15 +33,16 @@ boton.addEventListener("click", () => {
 
 function loaded(){
     var box = document.createElement('div');
+    var imgAbout = document.getElementById("imgAbout");
     box.className = 'box';
     box.style.width = '4000px';
     box.style.height = '4000px';
-    box.style.zIndex = '1000';
+    box.style.zIndex = '500';
     box.style.background = 'white';
     box.style.position = 'fixed';
     box.style.mixBlendMode = 'difference';
     box.style.top = '-1500px';
-    box.style.left = '60%';
+    box.style.left = '50%';
     box.style.transformOrigin = 'left';
     box.style.boxShadow = '10px 10px 50px 50px';
     document.body.appendChild(box);
@@ -50,7 +51,6 @@ function loaded(){
     setTimeout(function(){
         box.style.rotate = '150deg';
         box.style.animation = 'tra 2s ease-out forwards';
-        
     }, 5500);
     
     setTimeout(function(){
