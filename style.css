@@ -354,12 +354,14 @@ footer{
 
 .redes{
     margin-top: 30px;
+    
 }
 
 .redes a .fa-brands{
     font-size: 30px;
     color:grey;
     transition: 1s;
+    padding-right: 20px;
 }
 .redes a .fa-brands:hover{
     font-size: 30px;
