@@ -46,7 +46,30 @@
     }
     
 }
+
+@keyframes rotate2 {
+
+    0% {
+        transform: rotate(-215deg);      
+    }
+    30%{
+        transform: rotate(-255deg); 
+    }
+    100%{
+        transform: rotate(-330deg);
+    }
+    
+}
+
 @keyframes tra {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+@keyframes tra2 {
     0%{
         transform: translateX(0px);
     }
