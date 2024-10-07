@@ -35,27 +35,39 @@ function loaded(){
     var boxes = [document.createElement('div'),document.createElement('div')];
     boxes.forEach(box => {
         box.className = 'box';
-        box.style.width = '4000px';
-        box.style.height = '4000px';
+        box.style.width = '1000vw';
+        box.style.height = '100vh';
         box.style.zIndex = '500';
         box.style.background = 'white';
         box.style.position = 'fixed';
         box.style.mixBlendMode = 'difference';
-        box.style.top = '-1500px';
-        box.style.left = '50%';
-        box.style.transformOrigin = 'left';
+        box.style.top = '-50%';
         box.style.boxShadow = '0px 0px 0px 0px';
         document.body.appendChild(box);
     });
+    boxes[0].style.left = '0';
+    boxes[1].style.right = '0';
+    boxes[0].style.transformOrigin = 'left ';
+    boxes[1].style.transformOrigin = 'right ';
     boxes[0].style.animation = 'rotate 5s ease forwards';
     boxes[1].style.animation = 'rotate2 5s ease forwards';
-    
-    setTimeout(function(){
-        boxes[0].style.rotate = '150deg';
-        boxes[1].style.rotate = '-330deg';
-        boxes[0].style.animation = 'tra 2s ease-out forwards';
-        boxes[1].style.animation = 'tra2 2s ease-out forwards';
-    }, 5500);
+    if (window.innerWidth < 600) {
+        setTimeout(function(){
+            boxes[0].style.rotate = '30deg';
+            boxes[1].style.rotate = '-30deg';
+            boxes[0].style.animation = 'tra 2s ease forwards';
+            boxes[1].style.animation = 'tra2 2s ease forwards';
+        }, 5500);
+    }
+    else{
+        setTimeout(function(){
+            boxes[0].style.rotate = '70deg';
+            boxes[1].style.rotate = '-70deg';
+            boxes[0].style.animation = 'tra 2s ease forwards';
+            boxes[1].style.animation = 'tra2 2s ease forwards';
+        }, 5500);
+
+    }
     
     setTimeout(function(){
         document.body.removeChild(boxes[0]);

@@ -36,13 +36,13 @@
 @keyframes rotate {
 
     0% {
-        transform: rotate(35deg);      
+        transform: rotate(65deg);      
     }
     30%{
-        transform: rotate(75deg); 
+        transform: rotate(70deg); 
     }
     100%{
-        transform: rotate(150deg);
+        transform: rotate(80deg);
     }
     
 }
@@ -50,31 +50,31 @@
 @keyframes rotate2 {
 
     0% {
-        transform: rotate(-215deg);      
+        transform: rotate(-65deg);      
     }
     30%{
-        transform: rotate(-255deg); 
+        transform: rotate(-70deg); 
     }
     100%{
-        transform: rotate(-330deg);
+        transform: rotate(-80deg);
     }
     
 }
 
 @keyframes tra {
     0%{
-        transform: translateX(0px);
+        transform: translate(0px,0px);
     }
     100%{
-        transform: translateX(1000px);
+        transform: translate(1000px,1000px);
     }
 }
 @keyframes tra2 {
     0%{
-        transform: translateX(0px);
+        transform: translate(0px,0px);
     }
     100%{
-        transform: translateX(1000px);
+        transform: translate(-1000px,1000px);
     }
 }
 
@@ -492,5 +492,31 @@ nav .fa-solid{
         padding-left: 10px;
         padding-right:0px ;
     }
+    @keyframes rotate {
 
+        0% {
+            transform: rotate(10deg);      
+        }
+        30%{
+            transform: rotate(15deg); 
+        }
+        100%{
+            transform: rotate(30deg);
+        }
+        
+    }
+    
+    @keyframes rotate2 {
+    
+        0% {
+            transform: rotate(-190deg);      
+        }
+        30%{
+            transform: rotate(-195deg); 
+        }
+        100%{
+            transform: rotate(-210deg);
+        }
+        
+    }
 }
