@@ -80,6 +80,7 @@ button{
     padding: 10px;
     border-radius: 20px;
     transition: 0.2s;
+
 }
 
 button:hover{
@@ -100,18 +101,22 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(img/backgrod.png);
+    background-image: url(img/backgwid.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-clip: content-box;
-    background-position-y: bottom;
-    background-size: 100vh;
+    background-position-y: top;
+    background-size:70vw;
+    
 }
 
 
 .container{
     padding: 10px 10%;
+    display: block;
 }
+
+
 
 .sub-title{
     color:var(--subtitle-color)
@@ -175,6 +180,7 @@ nav ul li a::after{
     background-color: var(--header-text-background);
     color: var(--header-text);
     box-shadow: 0px 10px 20px 9px var(--shadow-color);
+
 }
 
 .header-text h1{
@@ -408,16 +414,22 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
 
+ 
+    #cH{
+        display: flex;
+        justify-content: center;
+    }
+
     #header{
         justify-items: center;
         width: 100%;
         height: 100vh;
-        background-image: url(/img/back1.png);
+        background-image: url(/img/backgrod.png);
         background-repeat: no-repeat;
         background-position:right;
         background-clip: content-box;
-        background-position-y: 20vh;
-        background-size: 100vw;
+        background-position-y: 10vh;
+        background-size:contain;
     }
 
     .header-text{
@@ -524,8 +536,4 @@ nav .fa-solid{
 
 
 
-
-    @media only screen and (max-width = 1000) {
-        
-    }
 }

@@ -54,23 +54,23 @@ function loaded(){
     boxes[1].style.right = '-20px';
     boxes[0].style.transformOrigin = 'left ';
     boxes[1].style.transformOrigin = 'right ';
-    boxes[0].style.animation = 'rotate 5s ease forwards';
-    boxes[1].style.animation = 'rotate2 5s ease forwards';
+    boxes[0].style.animation = 'rotate 2s ease forwards';
+    boxes[1].style.animation = 'rotate2 2s ease forwards';
     if (screen.width < 600) {
         document.body.removeChild(boxes[0]);
         setTimeout(function(){
             boxes[1].style.rotate = '-70deg';
             boxes[1].style.animation = 'tra2 2s ease forwards';
-        }, 5500);
+        }, 2500);
     }
 
     else{
         setTimeout(function(){
             boxes[0].style.rotate = '80deg';
             boxes[1].style.rotate = '-80deg';
-            boxes[0].style.animation = 'tra 2s ease forwards';
-            boxes[1].style.animation = 'tra2 2s ease forwards';
-        }, 5500);
+            boxes[0].style.animation = 'tra 2s ease-in forwards';
+            boxes[1].style.animation = 'tra2 2s ease-in forwards';
+        }, 2500);
     }
     
     setTimeout(function(){
