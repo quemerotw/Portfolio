@@ -45,8 +45,8 @@ function loaded(){
         box.style.boxShadow = '0px 0px 20px 20px';
         if (screen.width < 600) {
             box.style.width = '200vh';
-            box.style.height = '45vw';
-            box.style.top='-30vh';
+            box.style.height = '60vw';
+            box.style.top='-20vh';
         }
         document.body.appendChild(box);
     });
@@ -57,10 +57,9 @@ function loaded(){
     boxes[0].style.animation = 'rotate 5s ease forwards';
     boxes[1].style.animation = 'rotate2 5s ease forwards';
     if (screen.width < 600) {
+        document.body.removeChild(boxes[0]);
         setTimeout(function(){
-            boxes[0].style.rotate = '88deg';
-            boxes[1].style.rotate = '-88deg';
-            boxes[0].style.animation = 'tra 2s ease forwards';
+            boxes[1].style.rotate = '-70deg';
             boxes[1].style.animation = 'tra2 2s ease forwards';
         }, 5500);
     }

@@ -500,7 +500,7 @@ nav .fa-solid{
     @keyframes rotate {
 
         0% {
-            transform: rotate(85deg);      
+            transform: rotate(40deg);      
         }
         100%{
             transform: rotate(88deg);
@@ -511,10 +511,10 @@ nav .fa-solid{
     @keyframes rotate2 {
     
         0% {
-            transform: rotate(-85deg);      
+            transform: rotate(-60deg);      
         }
         100%{
-            transform: rotate(-88deg);
+            transform: rotate(-70deg);
         }
         
     }
