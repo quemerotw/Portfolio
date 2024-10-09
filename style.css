@@ -38,9 +38,6 @@
     0% {
         transform: rotate(65deg);      
     }
-    30%{
-        transform: rotate(70deg); 
-    }
     100%{
         transform: rotate(80deg);
     }
@@ -51,9 +48,6 @@
 
     0% {
         transform: rotate(-65deg);      
-    }
-    30%{
-        transform: rotate(-70deg); 
     }
     100%{
         transform: rotate(-80deg);
@@ -66,7 +60,7 @@
         transform: translate(0px,0px);
     }
     100%{
-        transform: translate(1000px,1000px);
+        transform: translate(0px,1000px);
     }
 }
 @keyframes tra2 {
@@ -74,7 +68,7 @@
         transform: translate(0px,0px);
     }
     100%{
-        transform: translate(-1000px,1000px);
+        transform: translate(0px,1000px);
     }
 }
 
@@ -106,12 +100,12 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/img/back.png);
+    background-image: url(/img/back1.png);
     background-repeat: no-repeat;
     background-position: right;
     background-clip: content-box;
     background-position-y: bottom;
-    background-size: 400px;
+    background-size: 100vh;
 }
 
 
@@ -414,7 +408,17 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
 
-
+    #header{
+        justify-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(/img/back1.png);
+        background-repeat: no-repeat;
+        background-position:right;
+        background-clip: content-box;
+        background-position-y: 20vh;
+        background-size: 100vw;
+    }
 
     .header-text{
         margin-top:100%;
@@ -492,16 +496,14 @@ nav .fa-solid{
         padding-left: 10px;
         padding-right:0px ;
     }
+
     @keyframes rotate {
 
         0% {
-            transform: rotate(10deg);      
-        }
-        30%{
-            transform: rotate(15deg); 
+            transform: rotate(85deg);      
         }
         100%{
-            transform: rotate(30deg);
+            transform: rotate(88deg);
         }
         
     }
@@ -509,14 +511,21 @@ nav .fa-solid{
     @keyframes rotate2 {
     
         0% {
-            transform: rotate(-190deg);      
-        }
-        30%{
-            transform: rotate(-195deg); 
+            transform: rotate(-85deg);      
         }
         100%{
-            transform: rotate(-210deg);
+            transform: rotate(-88deg);
         }
+        
+    }
+
+    /*----------------------horizontal---------------------*/
+
+
+
+
+
+    @media only screen and (max-width = 1000) {
         
     }
 }
