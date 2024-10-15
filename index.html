@@ -102,12 +102,19 @@
     <!---------------servicios------------------>
 
 
-    <div id="proyectosUni">
+    <section id="proyectosUni">
         <div class="container">
             <h1 class="sub-title">Mis Proyectos Universitarios</h1>
-            <div class="proyUni-list">
-                <div class="pu-column">
-                    <img src="img/deportes.jpg" alt="Alternate Text" class="imgProy" />
+            <div class="navCarrousel"></div>
+            <div class="proyUni-list owl-carousel custom-carousel owl-theme">
+                <div class="pu-column active">
+                    <video class="imgProy" height="100%" autoplay muted loop>
+
+                        <source src="img/backProy.mp4" type="video/mp4">
+                
+                        Your browser does not support the video tag.
+                
+                    </video>
                     <div class="layer">
                         <h2>Sistema de gestion institucion educativa</h2>
                         <p>Implementado en C y Postgresql</p>
@@ -115,23 +122,81 @@
                     
                 </div>
                 <div class="pu-column">
-                    <img src="img/deportes.jpg" alt="Alternate Text" class="imgProy"/>
+                    <video class="imgProy" height="100%" autoplay muted loop>
+
+                        <source src="img/backProy.mp4" type="video/mp4">
+                
+                        Your browser does not support the video tag.
+                
+                    </video>
                     <div class="layer">
                         <h2>Sistema de gestion institucion Deportiva</h2>
                         <p>Implementado en C# y Postgresql</p>
                     </div>
                 </div>
                 <div class="pu-column" id="ardu">
-                    <img src="img/deportes.jpg" alt="Alternate Text" class="imgProy" />
+                    <video class="imgProy" height="100%" autoplay muted loop>
+
+                        <source src="img/backProy.mp4" type="video/mp4">
+                
+                        Your browser does not support the video tag.
+                
+                    </video>
                     <div class="layer">
                         <h2>Sistema de fotomulta con Arduino </h2>
                         <p>Implementado en C para el modelo p33FJ256GP710</p>
                     </div>
                 </div>
-         
+                <div class="pu-column" id="ardu">
+                    <video class="imgProy" height="100%" autoplay muted loop>
+
+                        <source src="img/backProy.mp4" type="video/mp4">
+                
+                        Your browser does not support the video tag.
+                
+                    </video>
+                    <div class="layer">
+                        <h2>Sistema de fotomulta con Arduino </h2>
+                        <p>Implementado en C para el modelo p33FJ256GP710</p>
+                    </div>
+                </div>
+                <div class="pu-column" id="ardu">
+                    <video class="imgProy" height="100%" autoplay muted loop>
+
+                        <source src="img/backProy.mp4" type="video/mp4">
+                
+                        Your browser does not support the video tag.
+                
+                    </video>
+                    <div class="layer">
+                        <h2>Sistema de fotomulta con Arduino </h2>
+                        <p>Implementado en C para el modelo p33FJ256GP710</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true,
+            items: 2,
+            center: true,
+            dots: false,
+            navContainer: ".navCarrousel",
+        });
+        $(document).ready(function () {
+            $(".custom-carousel .pu-column").click(function () {
+                $(".custom-carousel .pu-column").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+
+
 
     <div id="contacto">
         <div class="container">
