@@ -99,7 +99,7 @@ body{
 /*header*/
 
 #header{
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-image: url(img/backgwid.png);
     background-repeat: no-repeat;
@@ -197,11 +197,8 @@ nav ul li a::after{
 /*about*/
 
 
-
-
 #about {
-    padding: 20px;
-
+    padding: 20px
 }
 
 
@@ -217,33 +214,58 @@ nav ul li a::after{
 }
 
 .ab-column-img{
-    flex-basis: 35%;
+    flex-basis: 20%;
+    position: relative;
 }
 
 .ab-column-img img{
     width:100%;
+    object-fit: cover;
+}
+
+.overlayImgAb{
+    position: absolute;
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 95%);
+    
 }
 
 .ab-column-txt{
    color: var(--ab-column-text);
-    flex-basis: 65%;
+    flex-basis: 80%;
     width: fit-content;
     
 }
 
+.menuha{
+    color: var(--ab-column-text);
+    flex-basis: 100%;
+    display: flex;
+}
+
 .titulos-menu{
     display:flex;
-    margin: 20px 0 50px;
+    margin: 0px 0 0px;
     color:var(--titulos-menu)
 }
 
 .menu-links {
-    margin-right: 30px;
+    margin-right: 0px;
     font-size: 18px;
     font-weight:500;
     cursor:pointer;
     position: relative;
     transition: 1s;
+    margin-right: 20px;
 }
 
 .menu-links::after {
@@ -253,7 +275,7 @@ nav ul li a::after{
     background: var(--menu-links-undeline);
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -1px;
     transition: 0.7s;
 }
 
@@ -432,8 +454,15 @@ nav .fa-solid{
 }
 
 @media (max-width: 600px){
+    
+    .sub-title{
+        font-size: 40px;
+    }
 
- 
+    .container{
+        padding: 5px;
+    }
+
     #cH{
         display: flex;
         justify-content: center;
@@ -451,8 +480,11 @@ nav .fa-solid{
         background-image: url(img/backgrod.png);
     }
 
+
     .header-text{
-        margin-top:100%;
+        margin-top:70%;
+        margin-left: 0;
+        width: 80%;
     }
         
     .header-text h1{
@@ -493,27 +525,37 @@ nav .fa-solid{
     }
 
     .sub-title{
-        font-size: 40px;
-    }
-
-    .container{
-        padding: 20px;
+        text-align: center;
     }
 
     .ab-column-img ,.ab-column-txt{
         flex-basis: 100%;
     }
-
+    .ab-column-img img{
+        height: 40vh;
+        width: auto;
+    }
     .ab-column-img{
+        display: flex;
+        justify-content: center;
         margin-bottom: 10px;
+        
     }
     .ab-column-txt{
         font-size: 14px;
         text-align:justify ;
         width: 100%;
-
+    }
+    
+    .ab-column-txt p{
+        overflow: scroll;
+        
+        height: 40vh;
     }
 
+    .menuha{
+        flex-direction: column; 
+    }
     .titulos-menu{
         flex-direction: column; 
     }
@@ -522,11 +564,25 @@ nav .fa-solid{
         padding-top: 10px;
     }
 
+    .pu-column{
+        height: auto;
+        width: 50vw;
+    }
+
+    .pu-column.active{
+        width: 60vw;
+    }
+    
+    #proyectosUni{
+        margin: 20px;
+    }
 
     form input, form textarea{
         padding-left: 10px;
-        padding-right:0px ;
+        padding-right:0 ;
+        width: 96%;
     }
+
 
     @keyframes rotate {
 
@@ -566,27 +622,46 @@ nav .fa-solid{
 
 
 
-
     #about{
         margin-top: calc(40vh * 1.2);
+        padding: 0;
     }
     .ab-column-img{
-        flex-basis: 100%;
-        justify-content:center;
-        display: flex;
+        flex-basis: 30%;
     }
     
+    .row-about{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0;
+    }
+
     .ab-column-img img{
-        width:50%;
+        width:auto;
+        height: 80vh;
     }
     
     .ab-column-txt{
-       color: var(--ab-column-text);
-        flex-basis: 100%;
+        flex-basis: 65%;
+        color: var(--ab-column-text);
         width: fit-content;
-        
+    }
+    .ab-column-txt p{
+        height: 80vh;
+        overflow: scroll;
     }
 
+    
+
+    .pu-column{
+        height: auto;
+        width: 20vw;
+    }
+
+    .pu-column.active{
+        width: 60vw;
+    }
 
 
 

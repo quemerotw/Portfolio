@@ -48,7 +48,8 @@
         <div class="container">
             <div class="row-about">
                 <div class="ab-column-img">
-                    <img id="imgAbout" src="img/background.png" alt="ME" />
+                    <img src="img/background.png" alt="ME" />
+                    <div class="overlayImgAb"></div>
                 </div>
                 <div class="ab-column-txt">
                     <h1 class="sub-title">
@@ -61,8 +62,12 @@
                         y la capacidad de implementar soluciones informáticas que generan cambios positivos en la sociedad.
                         Actualmente, soy estudiante de las carreras de Analista Programador Universitario y Licenciatura en Sistemas,
                         con un enfoque en planificación, gestión y control de proyectos informáticos.
+
+                        Desde mis inicios en la programación, he mantenido una curiosidad constante por aprender y crecer en este campo en constante evolución. Prestar servicio tecnico de PCs no solo me llevó a explorar el desarrollo de software, sino que también me inspiró a buscar maneras de utilizar la tecnología para mejorar la vida de las personas. A medida que avanzo en mis estudios de Analista Programador Universitario y Licenciatura en Sistemas, me interesa cada vez más la intersección entre la tecnología y la sostenibilidad, buscando soluciones innovadoras que no solo optimicen procesos, sino que también contribuyan al bienestar de nuestra comunidad.
                     </p>
-                    <div class="titulos-menu">
+                </div>
+                <div class="menuha">
+                    <div class="titulos-menu"></div>
                         <p class="menu-links activeL" onclick="opentab('hab')">Habilidades</p>
                         <p class="menu-links" onclick="opentab('exp')">Experiencia</p>
                         <p class="menu-links" onclick="opentab('edu')">Educacion</p>
@@ -90,7 +95,6 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -183,8 +187,8 @@
         $(".custom-carousel").owlCarousel({
             autoWidth: true,
             loop: true,
-            items: 2,
-            center: false,
+            freeDrag: false,
+            items:7,
             dots: false,
             navContainer: ".navCarrousel",
         });
