@@ -204,6 +204,8 @@ nav ul li a::after{
 
 }
 
+
+
 .row-about{
     display:flex;
     justify-content:space-between;
@@ -333,15 +335,18 @@ button.owl-next{
 }*/
 
 .owl-stage {
-    margin: 15px 0;
+    margin: 10px 0;
     display: flex;
 }
 .pu-column {
-    margin: 0 15px 60px;
+    border-style:solid;
+    border-color: #000000;
+    margin: 0 30px 6px;
     width: 320px;
     height: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: var(--pu-column-text);
     background: #343434 no-repeat center center / cover;
     border-radius: 16px;
@@ -349,50 +354,15 @@ button.owl-next{
     position: relative;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    transform: translate3d(0,0,30px);
     box-shadow: 0px 10px 20px 9px var(--shadow-color);
 }
 
 .pu-column.active {
     width: 500px;
+    transform:matrix3d()
 }
 
-/*.pu-column{
-    position:relative;
-    color: var(--pu-column-text);
-    background-color: var(--pu-column-background);
-    border-radius:20px;
-    transition:1s;
-    overflow:hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pu-column:hover {
-    background-color: var(--pu-column-hover-background);
-    transform:translateY(-10px);
-    color:var(--pu-column-hover-text);
-    transform:scale(1.2);
-}
-
-.imgProy {
-    border-radius: 10px;
-    object-fit: cover;
-    width: 100%;
-    transition:3s ease-in;
-}
-
-.pu-column:hover .imgProy {
-    transform: scale(1.9);
-    height: 100%;
-}
-
-.pu-column:hover .layer {
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-*/
 .layer {
     display: flex;
     flex-direction: column;
@@ -406,6 +376,7 @@ button.owl-next{
 footer{
     padding-top: 20px;
     text-align: center;
+    font-size: 10px;
 }
 
 
